@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments (do not commit; leave the existing root .venv untouched)
+.venv/
+backend/.venv/
+venv/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Environment and editor
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
+
+# OS / IDE
+.idea/
+.vscode/
+*.swp

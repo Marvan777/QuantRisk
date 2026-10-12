@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;750&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0;
+  background: #F7F5F0;
+  color: #1B2926;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="range"] { accent-color: #216B55; }
+.chart-tooltip {
+  background: #FFFFFF;
+  border: 1px solid #E5E1D8;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(27, 41, 38, .09);
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #1B2926;
+}
+button, a, input, select { transition: background-color .18s ease, border-color .18s ease, box-shadow .18s ease, color .18s ease; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid #39846D;
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+/* Subtle, accessible scrolling in dense portfolio panels. */
+* { scrollbar-width: thin; scrollbar-color: #B9C7BF transparent; }
+input, button { font: inherit; }
+@media (max-width: 640px) {
+  .recharts-wrapper { max-width: 100%; }
+}
